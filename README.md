@@ -1,6 +1,1 @@
-this is test file
-this is test file
-this is test file
-this is test file
-this is test file
-this is test file
+Hello!! Welcome to my repository. This is my first complete website project. In this project i've worked As a designer to design the site, as a backend developer for storing data to database and finally as front-end developer to give the website life. Though it is not a professional website but in the end of the day I made it. 
