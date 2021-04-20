@@ -34,13 +34,13 @@ const NavBar = () => {
     <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div className="navbar-nav">
         <Link to='/home' className="nav-link me-5">Home</Link>
-        <Link to="/About" className="nav-link me-5" href="#">About</Link>
-        <a className="nav-link me-5" href="#">Service</a>
-        <a className="nav-link me-5" href="#">Contact</a>
+        <Link to="/About" className="nav-link me-5" >About</Link>
+        <Link to='/home' className="nav-link me-5" >Service</Link>
+        <Link to='/home' className="nav-link me-5" >Contact</Link>
         {
-          admin?<Link to='/dashboard' className="nav-link me-5" href="#">Admin</Link>:<Link to='/dashboard' className="nav-link me-5" href="#">Cart</Link>
+          admin?<Link to='/dashboard' className="nav-link me-5" >Admin</Link>:<Link to='/dashboard' className="nav-link me-5">Cart</Link>
         }
-        <Link to="/login" className="nav-link me-5" href="#">Login</Link>
+        <Link to="/login" className="nav-link me-5">Login</Link>
       </div>
     </div>
   </div>
