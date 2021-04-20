@@ -40,9 +40,7 @@ const NavBar = () => {
         {
           admin?<Link to='/dashboard' className="nav-link me-5" href="#">Admin</Link>:<Link to='/dashboard' className="nav-link me-5" href="#">Cart</Link>
         }
-        {
-          loggedInUser?<Link to="/login" className="nav-link me-5" href="#">Log out</Link>:<Link to="/login" className="nav-link me-5" href="#">Login</Link>
-        }
+        <Link to="/login" className="nav-link me-5" href="#">Login</Link>
       </div>
     </div>
   </div>
