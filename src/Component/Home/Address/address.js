@@ -32,7 +32,7 @@ const Address = () => {
                     </div>
                </div>
                <div style={{width:'400px', marginTop:'30px'}}>
-                        <img style={{width:'400px', borderRadius:'15px'}} src={map} alt=""/>
+                        <img style={{width:'370px', borderRadius:'15px'}} src={map} alt=""/>
                </div>
            </div>
         </div>

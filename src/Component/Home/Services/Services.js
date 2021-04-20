@@ -17,7 +17,7 @@ const Services = () => {
     
                 <div className="d-flex justify-content-around mt-5  flex-wrap">
                     {
-                        services?.map(service=> <Link to={`/dashboard/${service.serviceName}`} className='service'style={{width:'330px', textDecoration:'none', boxShadow:'10px 10px 5px lightgrey', borderRadius:'10px',transition:'transform 2s', padding:'15px'}}>
+                        services?.map(service=> <Link to={`/dashboard/${service.serviceName}`} className='service mt-4'style={{width:'330px', textDecoration:'none', boxShadow:'10px 10px 5px lightgrey', borderRadius:'10px',transition:'transform 2s', padding:'15px'}} key={service._id}>
                             <img src={service.image} style={{width:'100px', borderRadius:'10px'}} alt=""/>
                             <h3>{service.serviceName}</h3>
                             <p>{service.description}</p>

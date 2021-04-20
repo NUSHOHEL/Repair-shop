@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import "./Footer.css"
 const helpdesk = [
+    {id:1},
     { name: "Query your prblm"},
     { name: "Get professional advice" },
     { name: "Make an appointment"},
@@ -10,11 +11,13 @@ const helpdesk = [
     
 ]
 const ourAddress = [
+    {id:2},
     { name: "New York - 101010 Hudson", link: "//google.com/map" },
     { name: "Yards", link: "//google.com/map" },
 
 ]
 const fixitPage = [
+    {id:3},
     { name: "FAQ"},
     { name: "Support" },
     { name: "Contact us" },
@@ -24,6 +27,7 @@ const fixitPage = [
     
 ]
 const services = [
+    {id:4},
     { name: "Smart phone Repair" },
     { name: "Tablate Repair" },
     { name: "Laptop Repair" },
@@ -40,25 +44,25 @@ const Footer = () => {
                 <div className="mt-4">
                     <h3><strong>Help Desk</strong></h3>
                     {
-                        helpdesk.map(emergency => <li style={{ width: '200px', margin: '15px', listStyle: 'none'}}>{emergency.name}</li>)
+                        helpdesk.map(help => <li style={{ width: '200px', margin: '15px', listStyle: 'none'}} key={help.id} >{help.name}</li>)
                     }
                 </div>
                 <div className="mt-4" >
                     <h3><strong>Services</strong></h3>
                     {
-                        services.map(emergency => <li style={{ width: '200px', margin: '15px', listStyle: 'none' }}>{emergency.name}</li>)
+                        services.map(service => <li style={{ width: '200px', margin: '15px', listStyle: 'none' }} key={service.id}>{service.name}</li>)
                     }
                 </div>
                 <div className="mt-4">
                     <h3><strong>Fixit Page</strong></h3>
                     {
-                        fixitPage.map(emergency => <li style={{ width: '200px', margin: '15px', listStyle: 'none' }}>{emergency.name}</li>)
+                        fixitPage.map(fixit => <li style={{ width: '200px', margin: '15px', listStyle: 'none' }} key={fixit.id}>{fixit.name}</li>)
                     }
                 </div>
                 <div className="mt-4">
                     <h3><strong>Our Address</strong></h3>
                     {
-                        ourAddress.map(emergency => <li style={{ width: '200px', margin: '15px', listStyle: 'none' }}>{emergency.name}</li>)
+                        ourAddress.map(address => <li style={{ width: '200px', margin: '15px', listStyle: 'none' }} key={address.id}>{address.name}</li>)
                     }
                     <ul className="social-media list-inline">
                         <li className="list-inline-item" style={{ width: '50px', height: '50px', borderRadius: '50%', backgroundColor: '#1cc7ca', textAlign: 'center', padding: '15px' }}> <a href="//facebook.com"><FontAwesomeIcon className="icon active-icon" icon={faFacebookF} /></a>  </li>

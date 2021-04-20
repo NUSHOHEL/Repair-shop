@@ -18,7 +18,7 @@ const Review = () => {
                 <p className="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
             </div>
             <div className="row people">
-               {reviews.map(review=> <div className="col-md-6 col-lg-4 item">
+               {reviews.map(review=> <div className="col-md-6 col-lg-4 item" key={review._id}>
                     <div className="box">
                         <p className="description">{review.description}</p>
                     </div>
